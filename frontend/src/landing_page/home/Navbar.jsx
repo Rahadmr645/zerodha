@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav className="navbar  navbar-expand-lg navbar-light bg-light sticky-top  mt-3" style={{borderBottom:'1px solid #e3e3e3',}}>
             <div className="container-fluid d-flex justify-content-between w-100"
-                style={{ border:"1px solid green",  alignItems: 'center' }}>
+                style={{ alignItems: 'center' }}>
 
                 <a className="navbar-brand" style={{ width: "60%", paddingLeft: '200px' }} href="#">
                     <img style={{width:"100px",height:'20px'}} src={logo} alt='logo' />

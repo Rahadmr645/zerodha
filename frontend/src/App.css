@@ -1,75 +1,191 @@
 .active {
-   font-weight: bold;
-}
-.hero-container{
-   width: 100%;
-   height: auto;
-   display: flex;
-   gap: 50px;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+  font-weight: bold;
 }
 
-.hero_image{
+.hero-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_image {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
-.heorImage{
-   width: 650px;
-   height: 60vh;
+
+.heorImage {
+  width: 650px;
+  height: 60vh;
 }
 
 
 /* second section */
-.second-section{
-   width: 100%;
-   height: auto;
-   display: flex;
-   justify-content: center;
-   gap: 100px;
-   margin-top: 100px;
-   
+.second-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+
 }
+
 .eco-text-container p {
-   max-width: 450px;
-   color: rgb(102, 102, 102)
+  max-width: 450px;
+  color: rgb(102, 102, 102)
 }
-.ero-text-container h5{
+
+.ero-text-container h5 {
   color: rgb(66, 66, 66)
 }
 
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-left: 320px;
+}
+
+.text p {
+  max-width: 297px;
+}
+
+.pricing-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  ;
+}
+
+.pricing-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.pricing-box {
+  width: 151px;
+  height: 71px;
+  display: flex;
+  justify-content: center;
+  gap: none;
+}
+
+.pricing-box p {
+  font-size: 10px;
+  margin-top: 20px;
+  color: rgb(102, 102, 102)
+}
+
+.pricing-box img {
+  width: 151px;
+  height: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* education section */
+.education {
+  display: flex;
+  gap: 150px;
+  margin-top: 40px;
+  align-items: center;
+}
+.edu-image img {
+  width: 400px;
+  height: 258px;
+}
+
+
+.edu-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;;
+}
+.edu-desc p {
+  max-width: 400px;
+}
+
+
+/* footer */
+.footer{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 60px;
+  border-top: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.link-box{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;;
+  margin-top: 10px;
+}
+
+.first-icons a , .second-icons a {
+  font-size: 20px;
+}
 
 
 
 
 
-@media (max-width: 510px ) {
-  
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile responsive ness */
+@media (max-width: 510px) {
+
   .navbar {
     width: 530px;
   }
-  
+
   .navbar-brand {
     display: flex;
     margin-right: 20px;
-    border: 1px solid red;
+   
     justify-content: center;
   }
-  
-  
-  
-  
+
+
+
+
   .heorImage {
     width: 300px;
   }
-  
+
   .second-section {
     display: flex;
     flex-direction: column;
-    
+
   }
 }

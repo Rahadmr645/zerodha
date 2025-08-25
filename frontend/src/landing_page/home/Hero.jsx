@@ -3,6 +3,11 @@ import homeHero from '../../assets/homeHero.png'
 import ecosystem from '../../assets/ecosystem.png'
 import pressLogo from '../../assets/pressLogos.png'
 import { FaArrowRightLong } from "react-icons/fa6";
+import pricing0 from '../../assets/pricing0.svg'
+import pring20 from '../../assets/intradayTrades.svg';
+import education from '../../assets/education.svg'
+
+
 const Hero = () => {
   return (
     <div className='hero-container '>
@@ -46,7 +51,64 @@ const Hero = () => {
         </div>
       </div>
       <div className="third-image mt-2">
-        <img style={{width:'710px',height:'40px'}} src={pressLogo} alt="" />
+        <img style={{ width: '710px', height: '40px' }} src={pressLogo} alt="" />
+      </div>
+
+
+      {/* unbeatable pricing */}
+      <div className="pricing">
+        <h3>Unbeatable pricing</h3>
+        <div className="pricing-item">
+          <div className="text">
+            <p>We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
+          </div>
+          <div className="pricing-image">
+            <div className='pricing-box'>
+              <img src={pricing0} alt="" />
+              <p>Free account
+                opening</p>
+            </div>
+            <div className='pricing-box'>
+              <img src={pricing0} alt="" />
+              <p>Free equity delivery
+                and direct mutual funds</p>
+            </div>
+            <div className='pricing-box'>
+              <img src={pring20} alt="" />
+              <p> Intraday and
+                F&O</p>
+            </div>
+          </div>
+
+        </div>
+        <a href="#">See pricing <FaArrowRightLong />   </a>
+      </div>
+
+
+      {/* education section  */}
+
+      <div className="education">
+        <div className="edu-image">
+          <img src={education} alt="" />
+        </div>
+        <div className="edu-desc">
+          <h3>Free and open market education</h3>
+          <div className='edu-info'>
+            <p>Varsity, the largest online stock market education book in the world covering everything from the basics to advanced trading.</p>
+            <a href="#">Varsity  <FaArrowRightLong /></a>
+          </div>
+          <div className='edu-info'>
+            <p>TradingQ&A, the most active trading and investment community in India for all your market related queries.</p>
+            <a href="#">TradingQ&A  <FaArrowRightLong /></a>
+          </div>
+        </div>
+      </div>
+
+      {/* open account section */}
+      <div className="heroText mt-3 d-flex  flex-column align-items-center gap-2">
+        <h1>Open a Zerodha account</h1>
+        <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
+        <button className='btn btn-outline-success mt-3'>Sign up for free</button>
       </div>
     </div>
   )
