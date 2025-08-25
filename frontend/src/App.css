@@ -41,3 +41,35 @@
 .ero-text-container h5{
   color: rgb(66, 66, 66)
 }
+
+
+
+
+
+
+@media (max-width: 510px ) {
+  
+  .navbar {
+    width: 530px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    margin-right: 20px;
+    border: 1px solid red;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .heorImage {
+    width: 300px;
+  }
+  
+  .second-section {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
