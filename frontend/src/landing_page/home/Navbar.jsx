@@ -1,21 +1,22 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useContext, useState } from 'react'
+
 import logo from '../../assets/logo.svg'
+import { Context } from '../../context/StoreContex';
 
 const Navbar = () => {
 
 
     const [active, setActive] = useState('');
 
-
+    const { setShowLoginForm } = useContext(Context);
 
     return (
-        <nav className="navbar  navbar-expand-lg navbar-light bg-light sticky-top  mt-3" style={{borderBottom:'1px solid #e3e3e3',}}>
+        <nav className="navbar   navbar-expand-lg navbar-light bg-light sticky-top  mt-3" style={{ borderBottom: '1px solid #e3e3e3',position:'relative',zIndex: '0' }}>
             <div className="container-fluid d-flex justify-content-between w-100"
                 style={{ alignItems: 'center' }}>
 
                 <a className="navbar-brand" style={{ width: "60%", paddingLeft: '200px' }} href="#">
-                    <img style={{width:"100px",height:'20px'}} src={logo} alt='logo' />
+                    <img style={{ width: "100px", height: '20px' }} src={logo} alt='logo' />
                 </a>
 
                 {/* for toggling */}
@@ -27,7 +28,7 @@ const Navbar = () => {
                     style={{ width: "40%" }} id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end pe-5">
                         <li className="nav-item">
-                            <a onClick={() => setActive("Signup")} className={`nav-link ${active === "Signup" ? "active" : ""}`} aria-current="page" href="#">Signup</a>
+                            <a onClick={() => { setActive('Signup'); setShowLoginForm(true) }} className={`nav-link ${active === "Signup" ? "active" : ""}`} aria-current="page" href="#">Signup</a>
                         </li>
                         <li className="nav-item">
                             <a onClick={() => setActive("About")} className={`nav-link ${active === "About" ? "active" : ""}`} href="#">About</a>
