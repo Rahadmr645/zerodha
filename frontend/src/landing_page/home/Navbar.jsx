@@ -28,7 +28,7 @@ const Navbar = () => {
                     style={{ width: "40%" }} id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end pe-5">
                         <li className="nav-item">
-                            <a onClick={() => { setActive('Signup'); setShowLoginForm(true) }} className={`nav-link ${active === "Signup" ? "active" : ""}`} aria-current="page" href="#">Signup</a>
+                            <a  onClick={() => { setActive('Signup'); setShowLoginForm(true) }} className={`nav-link ${active === "Signup" ? "active" : ""}`} aria-current="page" href="/signupPage">Signup</a>
                         </li>
                         <li className="nav-item">
                             <a onClick={() => setActive("About")} className={`nav-link ${active === "About" ? "active" : ""}`} href="#">About</a>
